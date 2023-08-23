@@ -16,7 +16,7 @@ int main ()
   cout << "very good";
    break;
   
-   case 'c':
+   case 'c': 
    cout << "good";
    break;
    
