@@ -1,7 +1,6 @@
 #include<iostream>
 using namespace std;
 class Student {
-  private:
     int adno;
     char name[21];
     float marks[5];
@@ -30,24 +29,20 @@ class Student {
     }
 
     void DISPLAYINFO() {
-      cout << "Admission Number: " << adno << endl;
-      cout << "Name: " << name << endl;
-      cout << "Marks: ";
+      cout << "\nAdmission Number: " << adno ;
+      cout << "\nName: " << name ;
+      cout << "\nMarks: ";
       for(int i = 0; i < 5; i++) {
         cout << marks[i] << " ";
       }
-      cout << endl;
-      cout << "Average: " << average << endl;
+      cout << "\n";
+      cout << "\nAverage: " << average ;
     }
 };
 int main ()
-{
+{ 
     Student stu; // stu is a student class object
     stu.READINFO();
     stu.DISPLAYINFO();
     return 0;
-
-
-
-    
 }
