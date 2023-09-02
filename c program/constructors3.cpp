@@ -4,45 +4,38 @@ using namespace std;
 
 class STUDENT
 {
-    int admo;
-    char sname[20];
-    float eng,math,sci,total;
+    int admo=11;
+    char sname[20]="vijay";
+    float eng=90,math=70,sci=80,total=240;
 
-    float ctotal()
+   float ctotal()
     {
         return eng + math + sci;
     }
 
     public :
 
-    STUDENT()
+    STUDENT(int admo,string sname,float eng,float math,float sci,float total)
     {
-        cout <<"Enter Number. : ";
-        cin >>admo;
-        cout <<"Enter Name. : ";
-        cin >> sname;
-        cout <<"Enter English Marks. : ";
-        cin >> eng;
-        cout <<"Enter Maths Marks. : ";
-        cin >> math;
-        cout <<"Enter Science Marks. : ";
-        cin >> sci;
+        cout <<"\nEnter student ID Number :- " << admo;
+        
+        cout <<"\nEnter student Name :- " << sname;
+        
+        cout <<"\nEnter eng mark :- " << eng;
+        
+        cout <<"\nEnter Maths Marks :- " << math;
+        
+        cout <<"\nEnter Science Marks :- " << sci;
+        
+         cout <<"\ntotal of 3 subject :- " << total;
+        
 
         total = ctotal();
-    }
-
-    void Showdata()
-    {
-        cout <<"\nStudents No. : "<< admo ;
-        cout <<"\nStudents Name. : "<< sname ;
-        cout <<"\nEng\tMath\tsci\ttotal" ;
-        cout <<"\n" << eng << "\t" << math << "\t" << sci << "\t" << total ;
     }
 
 };
 
 int main()
 {
-    STUDENT s;
-    s.Showdata();
+    STUDENT s(11,"vijay",90,70,80,240);
 }

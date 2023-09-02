@@ -1,53 +1,32 @@
 #include<iostream>
-
 using namespace std;
-
-class BATSMAN
+class  BOOK
 {
-    int bcode;
-    char bname[20];
-    int inning,notout,runs;
-    float batavg;
+    int book_no=1;
+    char book_title[20]="FOREST_BOOK";
+    float price=0.75;
+    int numCopies=111;
+    float totalcost=83.25;
 
-    float calcavg()
+   float total_cost(int n)
     {
-        batavg = runs / (inning - notout);
-
-        return batavg;
+      
+      return n * price;
     }
+  public :
 
-    public :
-
-    BATSMAN()
+   BOOK(int book_no,string book_title,float price,int numCopies,float totalcost)
     {
-        cout << "Enter Batsman No. : ";
-        cin >> bcode;
-        cout << "Enter Batsman Name. : ";
-        cin >> bname;
-        cout << "Enter Batsman Innings. : ";
-        cin >> inning;
-        cout << "How Many Time Batsman Notout. : ";
-        cin >> notout;
-        cout << "Enter Batsman Total Innings Runs. : ";
-        cin >> runs;
-
-        batavg = calcavg();
+        cout <<"\n Book Number :- " << book_no;
+        cout <<"\n Book Title :- " << book_title;
+        cout <<"\n Price per Copy :- " << price;
+        cout <<"\n number of total copies :- " << numCopies ;
+        cout <<"\n Total cost to be paid :- $ " << totalcost ;
+       
     }
-
-    void displaydata()
-    {
-         cout << "Batsman Total Batting Avg. : " << batavg <<"\n";
-
-        cout << "No.\tName.\tInin.\tNotout.\tRuns.\tAvg.";
-        cout << "\n"<< bcode << "\t" << bname << "\t" << inning << "\t" << notout << "\t" << runs << "\t" << batavg ;
-    }
-
 };
 
 int main()
 {
-    BATSMAN b;
-    b.displaydata();
-    
-    return 0;
+     BOOK b(1,"FOREST_BOOK",0.75,111,83.25);
 }
