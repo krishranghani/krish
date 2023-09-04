@@ -1,4 +1,4 @@
-#include<iostream>
+ #include<iostream>
 
 using namespace std;
 
@@ -38,4 +38,4 @@ class STUDENT
 int main()
 {
     STUDENT s(11,"vijay",90,70,80,240);
-}
+} 
