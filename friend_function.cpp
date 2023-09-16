@@ -19,7 +19,6 @@ class Triangle{
       }
       friend Triangle operator+(Triangle &a,Triangle &t);
 };
-
   Triangle operator+(Triangle &a,Triangle &t)
       {
         Triangle triangle;

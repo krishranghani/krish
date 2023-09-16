@@ -28,7 +28,6 @@ public:
              << name << "\t" << guj << "\t" << eng << "\t" << math << "\t" << sci << "\t" << total << "\t" << per << endl;
     }
 };
-
 int main()
 {
     Marksheet marksheet[4];

@@ -29,7 +29,6 @@ public:
         cout << product_name << "\t" << rate << "\t" << qty << "\t" << billamt << "\t" << gst << "\t" << total << "\t" << netbill << "\t" << endl;
     }
 };
-
 int main()
 {
     GST gst[2];
