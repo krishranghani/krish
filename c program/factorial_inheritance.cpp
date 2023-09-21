@@ -1,7 +1,7 @@
 #include <iostream>
+
 using namespace std;
 
-// Base class
 class Number {
 protected:
     int num;
@@ -13,7 +13,6 @@ public:
     }
 };
 
-// Derived class
 class Factorial : public Number {
 public:
     int calculateFactorial() {

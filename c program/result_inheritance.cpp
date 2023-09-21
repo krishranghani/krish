@@ -22,7 +22,7 @@ public:
     }
 };
   
-class Student : private Person {
+class Student : public Person {
 
     int guj ,eng,math,total,per;
   
